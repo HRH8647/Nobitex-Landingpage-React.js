@@ -1,0 +1,47 @@
+.Nav_container {
+  /* background-color: var(--dark);   */
+  background-color: #181a1d;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.logo_brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_brand img{
+    width: 30px;
+}
+.logo_brand span {
+    color: var(--light);
+    margin-right: 5px;
+    font-size: 4.5vw;
+}
+.bars_signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bars_signin button {
+    background-color: var(--primary);
+    border: 0;
+    margin-left: 15px;
+    padding: 4px 20px;
+    color: var(--light);
+    border-radius: 5px;
+    font-size: 3.8vw;
+    letter-spacing: -1px;
+    transition: .5s;
+}
+.bars_signin button:hover {
+    background-color: #613daf;
+}
+.bars_signin span {
+    font-size: 2.5rem;
+    color: var(--light);
+    margin-top: .6rem;
+}

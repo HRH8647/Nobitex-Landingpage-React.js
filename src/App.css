@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "shabnam";
+  src: url(./assets/font/Shabnam.ttf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ * {
+   font-family: shabnam;
+ }
+:root {
+  --background-color: #f2f3f5;
+    --background-color-2: #efefef;
+    --card-background-color: #fff;
+    --dark-tooltip-bg: #4c505b;
+    --tab-background-color: #f2f3f5;
+    --text-primary: #14151a;
+    --border-color: #e3e4e5;
+    --box-border-color: #e3e4e5;
+    --hover-color: #e3e4e5;
+    --scroll-bar-color: #a3a5a8;
+    --scroll-bar-color-hover: #292c34;
+    --btn-inactive-fill: #e3e4e5;
+    --btn-inactive-color: #a3a5a8;
+    --info-background-color: #fff4d9;
+    --info-background-color-2: #ffecee;
+    --shadow-color-1: rgba(20,21,26,0.1);
+    --shadow-color-2: rgba(20,21,26,0.4);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --primary: #784ed1;
+    --secondary: #15d1c6;
+    --warning: #fb3;
+    --success: #00aea4;
+    --danger: #f26672;
+    --info: #2d80da;
+    --light: #f2f3f5;
+    --default: #a3a5a8;
+    --dark: #1e2026;
 }
