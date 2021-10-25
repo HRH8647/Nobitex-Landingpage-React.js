@@ -19,29 +19,129 @@
 .logo_brand span {
     color: var(--light);
     margin-right: 5px;
-    font-size: 4.5vw;
+    font-size: 1.5rem;
 }
 .bars_signin {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bars_signin button {
+.bars_signin button:nth-child(1) {
+    background-color: inherit;
+    color: var(--light);
+    border: 0;
+    margin-left: 10px;
+    display: none;
+    cursor: pointer;
+}
+.bars_signin button:nth-child(2) {
     background-color: var(--primary);
     border: 0;
     margin-left: 15px;
     padding: 4px 20px;
     color: var(--light);
     border-radius: 5px;
-    font-size: 3.8vw;
+    font-size: 1.2rem;
     letter-spacing: -1px;
     transition: .5s;
+    cursor: pointer;
 }
-.bars_signin button:hover {
+.bars_signin button:nth-child(2):hover {
     background-color: #613daf;
 }
 .bars_signin span {
     font-size: 2.5rem;
     color: var(--light);
     margin-top: .6rem;
+}
+/* navbar */
+.list_item {
+    display: none;
+    list-style-type: none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative;
+}
+.item_nav {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+.item_nav:nth-child(2):hover .list_item_Price {
+    transform: scale(1);
+}
+.item_link {
+    color: var(--light);
+    text-decoration: none;
+    transition: .5s;
+}
+.item_link:hover,
+.item_nav:hover {
+    color: var(--success);
+}
+.item_nav i {
+    margin-right: 5px;
+}
+/* page of navbar */
+.list_item_Price {
+    list-style-type: none;
+    position: absolute;
+    background-color: var(--dark);
+    width: 17rem;
+    top: 4rem;right: 19rem;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top;
+    transition: .5s;
+}
+.item_nav_price {
+    font-size: 1.5rem;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.item_nav_price:hover ,
+.item_nav_price:hover > a {
+    background-color: var(--scroll-bar-color-hover);
+    color: var(--success);
+}
+.item_nav_price:nth-child(5) {
+    border-top: 1px solid var(--light);
+    padding-top: 10px;
+}
+.item_link_price {
+    text-decoration: none;
+    color: var(--light);
+}
+@media screen and (min-width: 576px) {
+    .bars_signin button:nth-child(1) {
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .Nav_container {
+        padding: 15px 50px;
+    }
+    .logo_brand img{
+        width: 40px;
+    }
+    .logo_brand span {
+        font-size: 1.7rem;
+    }
+    .bars_signin span {
+        display: none;
+    }
+    .bars_signin button:nth-child(1) {
+        border: 0;
+        margin-left: 18px;
+        font-size: 1.5rem;
+    }
+    .bars_signin button:nth-child(2) {
+        padding: 6px 25px;
+        font-size: 1.5rem;
+    }
+    .list_item {
+        display: flex;
+    }
 }

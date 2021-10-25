@@ -1,9 +1,10 @@
 .container {
-    width: 93%;
+    width: 30rem;
     height: 100vh;
     background-color: var(--dark);
     position: fixed;
     top: 0;left: 0;
+    user-select: none;
 }
 .btn_back {
     display: flex;
@@ -29,7 +30,7 @@
     background-color: inherit;
     border: 1px solid var(--primary);
     color: var(--primary);
-    font-size: 4.7vw;
+    font-size: 1.5rem;
 }
 .login:hover {
     background-color: var(--primary);
@@ -38,8 +39,63 @@
 .signin {
     background-color: var(--primary);
     color: var(--light);
-    font-size: 4.5vw;
+    font-size: 1.5rem;
 }
 .signin:hover {
     background-color: #613daf;
+}
+nav {
+    width: 95%;
+    margin-top: 15px;
+}
+.list_item {
+    width: 100%;
+    list-style-type: none;
+}
+.item_nav {
+    padding: 1.7rem 0;
+    border-top: 1px solid var(--default);
+}
+.item_link {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.item_link:hover {
+    color: var(--success);
+}
+.item_link img {
+    margin-left: 15px;
+}
+.item_link i {
+    margin-right: 5px;
+}
+/* page of navbar */
+.item_list_price {
+    list-style-type: none;
+    margin: 10px 5px;
+    background-color: var(--scroll-bar-color-hover);
+    transform: scale(0);
+    transform-origin: top;
+    transition: .5s;
+}
+.item_nav_price {
+    padding: 10px 5px;
+}
+.item_nav_price:nth-child(5) {
+    border-top: 1px solid var(--light);
+    padding-top: 10px;
+}
+.item_link_price {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        display: none;
+    }
 }
