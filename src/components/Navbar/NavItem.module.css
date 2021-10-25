@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;left: 0;
     user-select: none;
+    overflow: auto;
 }
 .btn_back {
     display: flex;
