@@ -44,6 +44,12 @@
   font-size: 1.5rem;
   border-radius: 5px;
   margin: 10px auto;
+  transition: .5s;
+  cursor: pointer;
+}
+.button_input:hover {
+  background-color: var(--info);
+
 }
 .link_header {
   width: fit-content;
