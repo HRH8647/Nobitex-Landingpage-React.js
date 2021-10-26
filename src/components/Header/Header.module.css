@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+.heading_header {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.text_header {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 12px 0;
+}
+.input_box form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 13px;
+}
+.input_field {
+  border: 0;
+  width: 100%;
+  height: 4rem;
+  text-indent: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+.input_field::placeholder {
+  font-size: 1.5rem;
+}
+.input_field:focus {
+  outline: 2px solid var(--info);
+  outline-offset: 1px;
+}
+.button_input {
+  border: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--success);
+  color: var(--light);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.link_header {
+  width: fit-content;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px auto 0;
+}
+.link_header:hover {
+  text-decoration: underline;
+  color: var(--info);
+}
+.link_header span {
+  margin-left: 5px;
+}
+.link_header img {
+  width: 20px;
+}
+.img_box {
+  overflow: hidden;
+  width: 100%;
+  height: 18rem;
+  background-image: url("https://nobitex.ir/_nuxt/img/jumbotron-mobile.29c14c0.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 450px) {
+  .input_field,
+  .button_input {
+    max-width: 40rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .img_box {
+    height: 22rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: 7rem;
+  }
+  .heading_header {
+    font-size: 2.6rem;
+  }
+  .text_header {
+    font-size: 1.8rem;
+  }
+  .input_box {
+      margin-top: 3rem;
+  }
+  .input_box form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_box {
+    background-image: url("https://nobitex.ir/_nuxt/img/jumbotron.7888412.svg");
+    background-size: cover;
+    height: 25rem;
+  }
+  .button_input {
+    margin: 0;
+    max-width: 10rem;
+  }
+  .input_field {
+    margin: 0;
+    max-width: 23rem;
+  }
+  .link_header {
+      margin: 15px auto 0;
+      font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+    .heading_header {
+        font-size: 3rem;
+    }
+    .text_header {
+        font-size: 2rem;
+    }
+    .input_field {
+        max-width: 35rem;
+    }
+    .link_header {
+        margin: 30px auto 0;
+        font-size: 1.9rem;
+    }
+    .img_box {
+        height: 60vh;
+      }
+}

@@ -2,7 +2,7 @@
   font-family: "shabnam";
   src: url(./assets/font/Shabnam.ttf);
 }
- * {
+* {
    font-family: shabnam;
  }
 :root {
