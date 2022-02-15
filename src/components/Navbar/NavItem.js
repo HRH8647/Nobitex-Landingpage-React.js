@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 //css
-import styles from './NavItem.module.css'
+import styles from './NavItem.module.css';
 import ShowField from './ShowField';
+//react-router-dom
+import {Link} from 'react-router-dom';
 
 const NavItem = ({ setShow }) => {
     const [showField, setShowField] = useState(false);
@@ -16,8 +18,8 @@ const NavItem = ({ setShow }) => {
         <div className={styles.container}>
             <div className={styles.btn_back}>
                 <span onClick={showHandler}><i className="fas fa-arrow-left"></i></span>
-                <button className={styles.login} type="button">ورود</button>
-                <button className={styles.signin} type="button">ثبت نام</button>
+                <Link className={styles.login} type="button" to="/login">ورود</Link>
+                <Link className={styles.signin} type="button" to="signup">ثبت نام</Link>
                 <nav>
                     <ul className={styles.list_item}>
                         <li className={styles.item_nav}>

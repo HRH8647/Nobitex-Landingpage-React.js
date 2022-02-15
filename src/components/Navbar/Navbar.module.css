@@ -26,15 +26,16 @@
     justify-content: center;
     align-items: center;
 }
-.bars_signin button:nth-child(1) {
+.login {
     background-color: inherit;
     color: var(--light);
     border: 0;
     margin-left: 10px;
     display: none;
     cursor: pointer;
+    text-decoration: none;
 }
-.bars_signin button:nth-child(2) {
+.signup {
     background-color: var(--primary);
     border: 0;
     margin-left: 15px;
@@ -45,8 +46,9 @@
     letter-spacing: -1px;
     transition: .5s;
     cursor: pointer;
+    text-decoration: none;
 }
-.bars_signin button:nth-child(2):hover {
+.signup:hover {
     background-color: #613daf;
 }
 .bars_signin span {
@@ -115,7 +117,7 @@
     color: var(--light);
 }
 @media screen and (min-width: 576px) {
-    .bars_signin button:nth-child(1) {
+    .login {
         display: block;
     }
 }
@@ -132,12 +134,12 @@
     .bars_signin span {
         display: none;
     }
-    .bars_signin button:nth-child(1) {
+    .login {
         border: 0;
         margin-left: 18px;
         font-size: 1.5rem;
     }
-    .bars_signin button:nth-child(2) {
+    .signup {
         padding: 6px 25px;
         font-size: 1.5rem;
     }

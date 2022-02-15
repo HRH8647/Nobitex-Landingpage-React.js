@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 //components
 import NavItem from './NavItem';
+//react-router-dom
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -14,10 +16,10 @@ const Navbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.Nav_container}>
-                <div className={styles.logo_brand}>
+                <Link className={styles.logo_brand} to="/">
                     <img src="https://nobitex.ir/_nuxt/img/nobitex-logo-1.77b6afd.webp" alt="Nobitext-logo" />
                     <span>نوبیتکس</span>
-                </div>
+                </Link>
                 <ul className={styles.list_item}>
                     <li className={styles.item_nav}>
                         <a href="/" className={styles.item_link}>
@@ -67,12 +69,12 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className={styles.bars_signin}>
-                    <button type="button">
+                    <Link to="/login" className={styles.login} type="button">
                         ورود
-                    </button>
-                    <button type="button">
+                    </Link>
+                    <Link to="/signup" className={styles.signup} type="button">
                         ثبت نام
-                    </button>
+                    </Link>
                     <span onClick={showHandler}>
                         <i className="fas fa-bars"></i>
                     </span>

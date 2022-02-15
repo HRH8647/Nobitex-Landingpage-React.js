@@ -32,6 +32,8 @@
     border: 1px solid var(--primary);
     color: var(--primary);
     font-size: 1.5rem;
+    text-decoration: none;
+    padding-right: 10px;
 }
 .login:hover {
     background-color: var(--primary);
@@ -41,6 +43,8 @@
     background-color: var(--primary);
     color: var(--light);
     font-size: 1.5rem;
+    text-decoration: none;
+    padding-right: 10px;
 }
 .signin:hover {
     background-color: #613daf;
