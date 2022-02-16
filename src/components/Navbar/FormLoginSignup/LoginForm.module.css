@@ -1,0 +1,108 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+.formLogin {
+    width: 25%;
+    padding: 30px 0;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 25px var(--shadow-color-1);
+}
+.formLogin h4 {
+    text-align: center;
+    color: var(--dark);
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-shadow: 5px 5px 10px var(--shadow-color-1);
+}
+.formLogin label {
+    font-size: 15px;
+    margin-right: 17px;
+    margin-bottom: 5px;
+}
+.emailBox, .passBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+:where(.emailBox, .passBox) input {
+    width: 90%;
+    height: 4rem;
+    border: 1px solid var(--btn-inactive-fill);
+    border-radius: 10px;
+    text-indent: 10px;
+}
+:where(.emailBox, .passBox) input:focus {
+    outline: 0;
+    border: 1px solid var(--info);
+}
+:where(.emailBox, .passBox) i {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.btn_login {
+    width: 90%;
+    height: 3.7rem;
+    margin: 10px auto 5px auto;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 10px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .2s linear;
+}
+.btn_login:hover {
+    opacity: 1;
+}
+.forgot_password {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn_signup {
+    width: 90%;
+    height: 3.7rem;
+    margin: 10px auto;
+    background-color: var(--info);
+    color: var(--light);
+    border-radius: 10px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+.btn_google {
+    width: 90%;
+    margin: 5px auto;
+    height: 3.7rem;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid var(--default);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn_google p{
+    font-size: 15px;
+}
+.btn_google img{
+    width: 20px;
+}
+.warning_validate {
+    color: var(--danger);
+    font-size: 12px;
+    margin-right: 20px;
+}
