@@ -23,7 +23,6 @@ const LoginForm = () => {
 
   useEffect(() => {
     setError(validate(data, "login"))
-    console.log(error);
   }, [data])
 
   //functions 

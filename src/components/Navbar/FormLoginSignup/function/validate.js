@@ -7,7 +7,7 @@ export const validate = (data, type) => {
 
         if (!email) {
             errors.email = "ایمیل نمی تواند خالی باشد";
-        } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        } else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
             errors.email = "ایمیل معتبر نیست";
         } else {
             delete errors.email;
@@ -23,7 +23,7 @@ export const validate = (data, type) => {
 
         if (!email) {
             errors.email = "ایمیل نمی تواند خالی باشد";
-        } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        } else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
             errors.email = "ایمیل معتبر نیست";
         } else {
             delete errors.email;
