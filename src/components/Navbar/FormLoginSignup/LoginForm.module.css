@@ -112,3 +112,36 @@
     font-size: 12px;
     margin-right: 20px;
 }
+@media screen and (min-width: 1200px) {
+    .formLogin {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .formLogin {
+        width: 33%;
+    }
+}
+@media screen and (max-width: 875px) {
+    .formLogin {
+        width: 38%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .formLogin {
+        width: 50%;
+    }
+    .formLogin h4 {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .formLogin {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .formLogin {
+        width: 80%;
+    }
+}
