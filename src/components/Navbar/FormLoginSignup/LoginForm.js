@@ -5,6 +5,9 @@ import { validate } from "./function/validate";
 import styles from "./LoginForm.module.css";
 //react router dom
 import { Link } from "react-router-dom";
+//toastify
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = () => {
   //Hooks
@@ -34,11 +37,21 @@ const LoginForm = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    if (Object.keys.length !== 0) {
+    if (Object.keys(error).length !== 0) {
       setFocus({
         email: true,
         password: true,
       });
+    } else {
+      toast.success('Login successfully', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
     }
   };
 
@@ -113,6 +126,7 @@ const LoginForm = () => {
           ></img>
           <p>با گوگل وارد شوید</p>
         </button>
+        <ToastContainer />
       </form>
     </div>
   );
